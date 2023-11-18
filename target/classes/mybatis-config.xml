@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="mysql.properties"/>
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <environments default="dev">
+        <environment id="dev">
+            <transactionManager type="JDBC"/>
+<!--            <dataSource type="POOLED">-->
+            <dataSource type="com.cs_liudi.oa.datasource.DruidDataSourceFactory">
+                <property name="driverClassName" value="${mysql.driver}"/>
+                <property name="url" value="${mysql.url}"/>
+                <property name="username" value="${mysql.username}"/>
+                <property name="password" value="${mysql.password}"/>
+                <property name="initialSize" value="10"/>
+                <property name="maxActive" value="20"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="mappers/test.xml"/>
+        <mapper resource="mappers/user.xml"/>
+        <mapper resource="mappers/rbac.xml"/>
+        <mapper resource="mappers/employee.xml"/>
+        <mapper resource="mappers/department.xml"/>
+        <mapper resource="mappers/leaveform.xml"/>
+        <mapper resource="mappers/processflow.xml"/>
+        <mapper resource="mappers/notice.xml"/>
+    </mappers>
+
+</configuration>

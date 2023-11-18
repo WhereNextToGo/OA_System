@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="cs_liudi-oa:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/cs_liudi_oa_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="cs_liudi-oa/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="cs_liudi-oa" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.11" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.11" />
+          <element id="library" level="project" name="Maven: com.alibaba.fastjson2:fastjson2-extension:2.0.20" />
+          <element id="library" level="project" name="Maven: com.alibaba.fastjson2:fastjson2:2.0.20" />
+          <element id="library" level="project" name="Maven: com.alibaba:druid:1.2.11" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:2.0.20" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.19.4" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.11" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.29" />
+          <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.29" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.10" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.32" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.62" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
